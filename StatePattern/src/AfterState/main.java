@@ -13,6 +13,7 @@ public class main {
                 frame.setClock(hour); // 시간 설정
                 try {
                     Thread.sleep(1000); // 1초마다 시간 업데이트
+                    
                 } catch (InterruptedException e) {
                     // 예외 처리
                 }

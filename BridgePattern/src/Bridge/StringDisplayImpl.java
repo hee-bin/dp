@@ -1,8 +1,7 @@
 package Bridge;
 
-
 /**
- * StringDisplayImpl 클래스는 DisplayImpl을 확장하여 문자열을 이용한 표시 기능을 제공합니다.
+ * StringDisplayImpl 클래스는 DisplayImpl을 상속받아 문자열을 이용한 표시 기능을 제공합니다.
  */
 public class StringDisplayImpl extends DisplayImpl {
     private String string;
@@ -18,7 +17,11 @@ public class StringDisplayImpl extends DisplayImpl {
     }
 
     /**
-     * 표시를 엽니다.
+     * 문자열 출력을 시작합니다.
+     * 
+     * <p>화면에 구분선을 생성합니다.</p>
+     * 
+     * @see StringDisplayImpl#printLine()
      */
     @Override
     public void rawOpen() {
@@ -34,7 +37,11 @@ public class StringDisplayImpl extends DisplayImpl {
     }
 
     /**
-     * 표시를 닫습니다.
+     * 문자열 출력을 마무리합니다.
+     *  
+     *  <p>화면에 구분선을 생성합니다.</p>
+     *  
+     *  @see StringDisplayImpl#printLine()
      */
     @Override
     public void rawClose() {
@@ -43,6 +50,8 @@ public class StringDisplayImpl extends DisplayImpl {
 
     /**
      * 화면을 그리는 구분선을 출력합니다.
+     * 
+     * <p>rawOpen(), rawClose() 메소드에 적용 됩니다.</p>
      */
     private void printLine() {
         System.out.print("+");

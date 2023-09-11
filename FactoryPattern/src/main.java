@@ -1,8 +1,14 @@
+/**
+ * default package
+ */
 import FrameWork.Factory;
 import FrameWork.Product;
 import IDCard.IDCardFactory;
 import Key.KeyFactory;
 
+/**
+ * 동작을 test하기 위한 main 클래스
+ */
 public class main {
 
 	public static void main(String[] args) {
@@ -16,14 +22,6 @@ public class main {
 		Product key1 = KeyFactory.create("YEJI");
 		
 		key1.use();
-		
-		
-		
-		
-		
-		
-		
 	}
-	
 }
 

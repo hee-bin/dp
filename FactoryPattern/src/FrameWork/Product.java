@@ -1,3 +1,6 @@
+/**
+ * 공장 추상 클래스와 상품 추상 클래스를 포함합니다.
+ */
 package FrameWork;
 
 /**
@@ -6,7 +9,7 @@ package FrameWork;
 public abstract class Product {
 
     /**
-     * 제품을 사용합니다.
+     * 제품을 사용하는 메서드입니다.
      */
     public abstract void use();
 }

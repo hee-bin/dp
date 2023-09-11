@@ -1,8 +1,9 @@
 package Adapter;
 
-
 /**
  * Banner 클래스는 특정 문자열을 괄호와 별표로 묶어서 출력하는 기능을 제공합니다.
+ * 
+ * <p>Banner 클래스의 메소드들은 printBanner클래스에 적용됩니다.</p>
  */
 public class Banner {
     private String string;

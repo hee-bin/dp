@@ -2,7 +2,6 @@ package AfterState;
 
 /**
  * StateEnum 열거형은 각 상태를 나타내며, 해당 상태에 대응하는 State 객체를 가지고 있습니다.
- * @author heebin
  */
 public enum StateEnum {
     DAY_STATE(new DayState()),

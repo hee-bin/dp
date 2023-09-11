@@ -3,8 +3,7 @@ package AfterState;
 import java.util.*;
 
 /**
- * StateTransitionMap 클래스는 시간대별 상태 전환 규칙을 관리하는 클래스입니다.
- * @author heebin
+ * StateTransitionMap 클래스는 시간대별 상태 전환을 관리하는 클래스입니다.
  */
 public class StateTransitionMap {
     private Map<HourRange, StateEnum> transitionMap = new HashMap<>();

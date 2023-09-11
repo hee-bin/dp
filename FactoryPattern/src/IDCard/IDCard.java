@@ -1,3 +1,6 @@
+/**
+ * IDCard 생성하는 공장과 IDCard 상품을 표현하는 클래스를 포합합니다.
+ */
 package IDCard;
 
 import FrameWork.Product;
@@ -14,13 +17,13 @@ public class IDCard extends Product {
      * @param owner ID 카드의 소유자입니다.
      */
     public IDCard(String owner) {
-        System.out.println(owner + "님의 카드가 생성되었습니다.");
+        System.out.println(owner + "\'s IDCard is on production at the IDCard factory");
         this.owner = owner;
     }
 
     @Override
     public void use() {
-        System.out.println(owner + "님의 카드를 사용합니다.");
+        System.out.println(owner + "using the IDCard");
     }
 
     @Override

@@ -1,3 +1,6 @@
+/**
+ * key를 생성하는 공장과 key 상품을 표현하는 클래스를 포합합니다.
+ */
 package Key;
 
 import FrameWork.Factory;
@@ -15,6 +18,6 @@ public class KeyFactory extends Factory {
 
     @Override
     protected void registerProduct(Product product) {
-        System.out.println(product + "의 열쇠가 사용 가능합니다.");
+        System.out.println(product + " is registered");
     }
 }

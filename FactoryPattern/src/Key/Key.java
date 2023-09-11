@@ -1,3 +1,6 @@
+/**
+ * key를 생성하는 공장과 key 상품을 표현하는 클래스를 포합합니다.
+ */
 package Key;
 
 import FrameWork.Product;
@@ -14,13 +17,13 @@ public class Key extends Product {
      * @param owner 열쇠의 소유자입니다.
      */
     public Key(String owner) {
-        System.out.println(owner + "님의 열쇠가 생성되었습니다.");
+        System.out.println(owner + "\'s Key is on production at the key factory");
         this.owner = owner;
     }
 
     @Override
     public void use() {
-        System.out.println(owner + "님의 열쇠를 사용합니다.");
+        System.out.println(owner + " using the key");
     }
 
     @Override
